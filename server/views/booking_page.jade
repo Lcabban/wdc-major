@@ -1,0 +1,147 @@
+doctype html
+html(lang='en')
+  head
+    title Hotelz
+    link(rel='stylesheet', type='text/css', href='/stylesheets/header.css')
+    link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Black+Han+Sans')
+    link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Roboto')
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')
+    script(src='/javascripts/booking_page.js')
+  body
+    // Header bar
+    .fixed
+      ul
+        li#home
+          a(href='index.html') Hotelz
+        li
+          a(href='account.html') #{username}
+        li
+          a(href='help.html') help
+        li#search
+          #searchDiv
+            form(action='search.html')
+              input(type='text', name='search', placeholder='Where do you want to go?')
+              button#searchButton(type='submit')
+                i.fa.fa-search
+    // booking Details / Personal details
+    #bookingInfo
+      .hotelImage
+        img(src='hotelimg2.jpg', alt='Test image')
+        h3 HOTEL NAME
+        br
+      .HotelContent
+        p Typical hotel selling point!, only 2 meters from everywhere importaint!!
+        p aircondictioned and has wifi!!!
+        p Loverly reception that cater to your needs.
+        p rooms are spacious have bathroom and a balcony etc....
+        br
+        h3 Facilities/Amenities
+        i.fa.fa-thermometer
+        | airconditioning
+        br
+        i.fa.fa-wifi
+        | wifi
+        br
+        i.fa.fa-ship
+        | pool
+        br
+        i.fa.fa-cutlery
+        | Dining
+        br
+        i.fa.fa-car
+        | Parking
+        br
+        i.fa.fa-square
+        | Exercise/gym
+        br
+        p description of Facilities/Amenities in more detail
+      br
+      #bookingDetails
+        h3 Booking Details
+        br
+        form(action='/action_page1.php')
+          div
+            label(for='ldate')
+              b Leave Date
+            input#ldate(type='date', required='')
+            label(for='rdate')
+              b Return Date
+            input#rdate(type='date', required='')
+            br
+            label(for='numAdults')
+              b Adults
+            input#numAdults(type='number', required='')
+            label(for='numChild')
+              b Children
+            input#numChild(type='number')
+            br
+            b Extra Requirements
+            br
+            textarea(rows='5', cols='60', name='extraReq')
+      #personalDetails
+        h3 Personal Details
+        br
+        form(action='/action_page2.php')
+          div
+            label(for='fname')
+              b First Name
+            input#fname(type='text', placeholder='First Name')
+            br
+            label(for='sname')
+              b Second Name
+            input#sname(type='text', placeholder='Second Name')
+            br
+            label(for='email')
+              b Email
+            input#email(type='email', placeholder='Enter Email')
+            br
+            label(for='phone') Phone
+            input#phone(name='phone', type='tel', placeholder='Eg. +14445556666', required='')
+      button#paymentInfoBtn(type='submit', onclick='showPaymentDetails()') NEXT
+    // payment details
+    #paymentInfo(style='display: none;')
+      br
+      #paymentDetails
+        h3 Payment Details
+        br
+        form#payment(action='/action_page3.php')
+          h4 Delivery address
+          b Address
+          br
+          textarea#address(name='address', rows='5', cols='60', required='')
+          br
+          label(for='postcode') Post Code
+          input#postcode(name='postcode', type='text', required='')
+          br
+          label(for='country') Country
+          input#country(name='country', type='text', required='')
+          br
+          br
+          h4 Card Details
+          h5 Card Type
+          input#visa(name='cardtype', type='radio')
+          label(for='visa') VISA
+          br
+          input#amex(name='cardtype', type='radio')
+          label(for='amex') Amemican Express
+          br
+          input#mastercard(name='cardtype', type='radio')
+          label(for='mastercard') Mastercard
+          br
+          br
+          label(for='cardnumber') Card Number
+          input#cardnumber(name='cardnumber', type='number', required='')
+          br
+          label(for='secure') Security Code
+          input#secure(name='secure', type='number', required='')
+          br
+          label(for='namecard') Name on Card
+          input#namecard(name='namecard', type='text', placeholder='Exact name as on the card', required='')
+        br
+      button#bookingInfoBtn(onclick='showBookingDetails()') BACK
+      button#finalConfirmBtn(type='submit', onclick='showFinalConfimation()') CONFIRM
+    // final confirmation
+    #finalConfirm(style='display: none;')
+      br
+      h3 Thanks for booking!
+      p BookingID #12308523

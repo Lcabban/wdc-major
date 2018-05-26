@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang  = "en">
+	<head>
+		<title>Hotelz</title>
+		<link rel="stylesheet" type="text/css" href="header.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Black+Han+Sans">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script src="booking_page.js"></script>
+	</head>
+	<body>
+		<!-- Header bar -->
+		<div class="fixed"> 
+			<ul>
+				<li id="home"><a href="index.html">Hotelz</a></li>
+				<li><a href="account.html">Account</a></li>
+				<li><a href="help.html">help</a></li>
+				<li id="search">
+					<div id = "searchDiv">
+						<form action="search.html">
+							<input type="text" name="search" placeholder="Where do you want to go?">
+							<button type="submit" id = "searchButton"><i class="fa fa-search"></i></button>
+						</form>
+					</div>
+				</li>
+			</ul>
+		</div>
+
+			<!-- booking Details / Personal details -->
+			<div id="bookingInfo">
+			<div class="hotelImage">
+			<img src="hotelimg2.jpg" alt="Test image" >
+			<h3>HOTEL NAME</h3>
+			<br>
+			</div>
+			<div class="HotelContent">
+					<p>Typical hotel selling point!, only 2 meters from everywhere importaint!!</p>
+					<p>aircondictioned and has wifi!!!</p>
+					<p>Loverly reception that cater to your needs.</p>
+					<p>rooms are spacious have bathroom and a balcony etc....</p>
+					<br>
+					<h3>Facilities/Amenities</h3>
+					
+					  <i class="fa fa-thermometer"></i>airconditioning<br>
+					  <i class=" fa fa-wifi"></i>wifi<br>
+					  <i class=" fa fa-ship"></i>pool<br>
+					  <i class=" fa fa-cutlery"></i>Dining<br>
+					  <i class=" fa fa-car"></i>Parking<br>
+					  <i class=" fa fa-square"></i>Exercise/gym<br>
+
+					
+					<p>description of Facilities/Amenities in more detail</p>
+				</div>
+			<br>
+			<div id="bookingDetails">
+				<h3>Booking Details</h3>
+				<br>
+				<form action="/action_page1.php">
+					<div>
+			 	   <label for="ldate"><b>Leave Date</b></label>
+			 	   <input type="date" id="ldate" required>
+
+			 	   <label for="rdate"><b>Return Date</b></label>
+	 		 	   <input type="date" id="rdate" required>
+	 		 	   <br>
+	 		 	   <label for="numAdults"><b>Adults</b></label>
+	 		 	   <input type="number" id="numAdults" required>
+	 		 	   <label for="numChild"><b>Children</b></label>
+	 		 	   <input type="number" id="numChild">
+	 		 	   <br>
+	 		 	   <b>Extra Requirements</b><br>
+	 		 	   <textarea rows="5" cols="60" name="extraReq"></textarea>
+				    
+					</div>
+				</form>
+			</div>
+			<div id="personalDetails">
+				<h3>Personal Details</h3>
+				<br>
+				<form action="/action_page2.php">
+					<div>
+			 	    <label for="fname"><b>First Name</b></label>
+			 	    <input type="text" placeholder="First Name" id="fname">
+			 	    <br>
+			 	    <label for="sname"><b>Second Name</b></label>
+			 	    <input type="text" placeholder="Second Name" id="sname">
+			 	    <br>
+			 	    <label for="email"><b>Email</b></label>
+			 	    <input type="email" placeholder="Enter Email" id="email">
+			 	    <br>
+			 	    <label for=phone>Phone</label>
+			        <input id=phone name=phone type=tel placeholder="Eg. +14445556666" required />
+					</div>
+				</form>
+			</div>
+			<button type="submit" id="paymentInfoBtn" onclick="showPaymentDetails()">NEXT</button>
+			</div>
+
+			<!-- payment details -->
+			<div id="paymentInfo" style="display: none;">
+				<br>
+			<div id="paymentDetails">
+				<h3>Payment Details</h3>
+				<br>
+				<form id=payment action="/action_page3.php"> 
+			                
+			        <h4>Delivery address</h4>
+			                <b>Address</b><br>
+			                <textarea id=address name=address rows="5" cols="60" required>
+			                </textarea>
+			                <br>
+			                <label for=postcode>Post Code</label>
+			                <input id=postcode name=postcode type=text required />
+			                <br>
+			                <label for=country>Country</label>
+			                <input id=country name=country type=text required />
+			                <br><br>
+			        <h4>Card Details</h4>
+			                <h5>Card Type</h5>
+			                        <input id=visa name=cardtype type=radio />
+			                        <label for=visa>VISA</label>
+			                        <br>
+			                        <input id=amex name=cardtype type=radio />
+			                        <label for=amex>Amemican Express</label>
+			                        <br>
+			                        <input id=mastercard name=cardtype type=radio />
+			                        <label for=mastercard>Mastercard</label>
+			                        <br>
+			                        <br>
+			                <label for=cardnumber>Card Number</label>
+			                <input id=cardnumber name=cardnumber type=number required />
+			                <br>
+			                <label for=secure>Security Code</label>
+			                <input id=secure name=secure type=number required />
+			                <br>
+			                <label for=namecard>Name on Card</label>
+			                <input id=namecard name=namecard type=text placeholder="Exact name as on the card" required />
+			</form><br>
+			</div>
+			<button id="bookingInfoBtn" onclick="showBookingDetails()">BACK</button>
+			<button type="submit" id="finalConfirmBtn" onclick="showFinalConfimation()">CONFIRM</button>
+			</div>
+
+			<!-- final confirmation -->
+			<div id="finalConfirm" style="display: none;">
+				<br>
+			<h3>Thanks for booking!</h3>
+			<p>BookingID #12308523</p>
+			</div>
+
+
+	</body>
+</html>

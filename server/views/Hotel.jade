@@ -1,0 +1,124 @@
+doctype html
+html(lang='en')
+  head
+    title Hotelz
+    link(rel='stylesheet', type='text/css', href='/stylesheets/header.css')
+    link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Black+Han+Sans')
+    link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Roboto')
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')
+  body
+    // header bar
+    .fixed
+      ul
+        li#home
+          a(href='index.html') Hotelz
+        li
+          a(href='account.html') #{username}
+        li
+          a(href='help.html') help
+        li#search
+          #searchDiv
+            form(action='search.html')
+              input(type='text', name='search', placeholder='Where do you want to go?')
+              button#searchButton(type='submit')
+                i.fa.fa-search
+    div
+      // image that will be replaced by the hotel currently showing on the page, with its name beneath
+      .hotelImage
+        img(src='hotelimg2.jpg', alt='Test image')
+        h3 HOTEL NAME
+      div
+        // This section will contain the list of rooms available in the hotel, each will have a small image then a room description next to it
+        .HotelRooms
+          h3 HOTEL ROOMS
+          ul#roomlist
+            li
+              img(src='hotelimg2.jpg', alt='Test image')
+              .RoomDescription
+                h3 ROOM NAME
+                p
+                  | perfect for the couples get away, this stylish room has a balcoy for viewing over the pool, a tv, and a luxury king sized bed
+                h3 Importaint Features
+                ul.innerRoomList
+                  li Point 1
+                  li Point 2
+                  li etc...
+                h3 Facilities/Amenities
+                i.fa.fa-thermometer
+                | airconditioning
+                br
+                i.fa.fa-wifi
+                | wifi
+                br
+                i.fa.fa-cutlery
+                | kitchen
+                br
+                i.fa.fa-play
+                | tv/dvd
+                br
+                i.fa.fa-car
+                | Parking
+                br
+                i.fa.fa-shower
+                | Bathroom
+                br
+            li
+              img(src='hotelimg1.jpg', alt='Test image')
+              .RoomDescription
+                h3 ROOM NAME
+                p  {Basic description here} 
+                h3 Importaint Features
+                ul.innerRoomList
+                  li Point 1
+                  li Point 2
+                  li etc...
+                h3 Facilities/Amenities
+                i.fa.fa-thermometer
+                | airconditioning
+                br
+                i.fa.fa-wifi
+                | wifi
+                br
+                i.fa.fa-cutlery
+                | kitchen
+                br
+                i.fa.fa-play
+                | tv/dvd
+                br
+                i.fa.fa-car
+                | Parking
+                br
+                i.fa.fa-shower
+                | Bathroom
+                br
+        // each hotel will have a more detailed description of the hotel with points they want to display here
+        .HotelFeatures
+          h3 HOTEL FEATURES
+          .HotelContent
+            h3 Some title if wanted
+            br
+            p Typical hotel selling point!, only 2 meters from everywhere importaint!!
+            p aircondictioned and has wifi!!!
+            p Loverly reception that cater to your needs.
+            p rooms are spacious have bathroom and a balcony etc....
+            br
+            h3 Facilities/Amenities
+            i.fa.fa-thermometer
+            | airconditioning
+            br
+            i.fa.fa-wifi
+            | wifi
+            br
+            i.fa.fa-ship
+            | pool
+            br
+            i.fa.fa-cutlery
+            | Dining
+            br
+            i.fa.fa-car
+            | Parking
+            br
+            i.fa.fa-square
+            | Exercise/gym
+            br
+            p description of Facilities/Amenities in more detail

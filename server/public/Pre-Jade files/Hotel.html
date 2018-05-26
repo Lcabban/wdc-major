@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang = "en">
+	<head>
+		<title>Hotelz</title>
+		<link rel="stylesheet" type="text/css" href="header.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Black+Han+Sans">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+	<body>
+		<!-- header bar -->
+		<div class="fixed"> 
+			<ul>
+				<li id="home"><a href="index.html">Hotelz</a></li>
+				<li><a href="account.html">Account</a></li>
+				<li><a href="help.html">help</a></li>
+				<li id="search">
+					<div id = "searchDiv">
+						<form action="search.html">
+							<input type="text" name="search" placeholder="Where do you want to go?">
+							<button type="submit" id = "searchButton"><i class="fa fa-search"></i></button>
+						</form>
+					</div>
+				</li>
+			</ul>
+		</div>
+		
+		<div>
+			<!-- image that will be replaced by the hotel currently showing on the page, with its name beneath -->
+			<div class="hotelImage">
+			<img src="hotelimg2.jpg" alt="Test image" >
+			<h3>HOTEL NAME</h3>
+			</div>
+			<div>
+
+			<!-- This section will contain the list of rooms available in the hotel, each will have a small image then a room description next to it -->	
+			<div class="HotelRooms">
+				<h3>HOTEL ROOMS</h3>
+				
+					<ul id="roomlist">
+						<li>
+						<img src="hotelimg2.jpg" alt="Test image" >
+						<div class="RoomDescription">
+							<h3>ROOM NAME</h3>
+							<p> perfect for the couples get away, this stylish room has a balcoy for viewing over the pool, a tv, and a luxury king sized bed </p>
+							<h3>Importaint Features</h3>
+							<ul class="innerRoomList">
+								<li>Point 1</li>
+								<li>Point 2</li>
+								<li>etc...</li>
+							</ul>
+							<h3>Facilities/Amenities</h3>
+							 <i class="fa fa-thermometer"></i>airconditioning<br>
+							  <i class=" fa fa-wifi"></i>wifi<br>
+							  <i class=" fa fa-cutlery"></i>kitchen<br>
+							  <i class=" fa fa-play"></i>tv/dvd<br>
+							  <i class=" fa fa-car"></i>Parking<br>
+							  <i class=" fa fa-shower"></i>Bathroom<br>
+						</div>
+						</li>
+
+						<li>
+						<img src="hotelimg1.jpg" alt="Test image" >
+						<div class="RoomDescription">
+							<h3>ROOM NAME</h3>
+							<p> {Basic description here} </p>
+							<h3>Importaint Features</h3>
+							<ul class="innerRoomList">
+								<li>Point 1</li>
+								<li>Point 2</li>
+								<li>etc...</li>
+							</ul>
+							<h3>Facilities/Amenities</h3>
+							 <i class="fa fa-thermometer"></i>airconditioning<br>
+							  <i class=" fa fa-wifi"></i>wifi<br>
+							  <i class=" fa fa-cutlery"></i>kitchen<br>
+							  <i class=" fa fa-play"></i>tv/dvd<br>
+							  <i class=" fa fa-car"></i>Parking<br>
+							  <i class=" fa fa-shower"></i>Bathroom<br>
+						</div>
+						</li>
+
+					</ul>
+				
+			</div>
+
+			<!-- each hotel will have a more detailed description of the hotel with points they want to display here -->
+			<div class="HotelFeatures">
+				<h3>HOTEL FEATURES</h3>
+				<div class="HotelContent">
+					<h3>Some title if wanted</h3>
+					<br>
+					<p>Typical hotel selling point!, only 2 meters from everywhere importaint!!</p>
+					<p>aircondictioned and has wifi!!!</p>
+					<p>Loverly reception that cater to your needs.</p>
+					<p>rooms are spacious have bathroom and a balcony etc....</p>
+					<br>
+					<h3>Facilities/Amenities</h3>
+					
+					  <i class="fa fa-thermometer"></i>airconditioning<br>
+					  <i class=" fa fa-wifi"></i>wifi<br>
+					  <i class=" fa fa-ship"></i>pool<br>
+					  <i class=" fa fa-cutlery"></i>Dining<br>
+					  <i class=" fa fa-car"></i>Parking<br>
+					  <i class=" fa fa-square"></i>Exercise/gym<br>
+
+					
+					<p>description of Facilities/Amenities in more detail</p>
+				</div>
+			</div>
+			</div>
+			
+		</div>
+	</body>
+</html>

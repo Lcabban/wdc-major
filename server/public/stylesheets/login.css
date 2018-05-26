@@ -1,0 +1,842 @@
+input[type=text], input[type=password], input[type=number], input[type=email] {
+    width: 100%;
+    padding: 16px 26px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 2px solid lightgrey;
+	border-radius: 4px;
+    box-sizing: border-box;
+    box-shadow: 1px 1px 1px grey;
+    white-space: nowrap;
+}
+
+input[type=checkbox] {
+	float: right;
+}
+
+.details {
+	float: left;
+	width: 1000px;
+	padding-right: 20px;
+	margin: 0 auto;
+	background-color: #d9e3f7;
+}
+
+#pi {
+	font-size: 14px;
+	text-align: center;
+	color: #666;
+	margin: 0;
+	padding: 10px 10px 10px 10px;
+	width: 30%;
+	float: left;
+	position: relative;
+	background-color: white;
+    transition: background-color 0.2s ease;
+}
+
+#fb {
+	font-size: 14px;
+	text-align: center;
+	color: #666;
+	margin: 0;
+	padding: 10px 10px 10px 10px;
+	width: 30%;
+	float: left;
+	position: relative;
+	background-color: #d9e3f7;
+    transition: background-color 0.2s ease;
+}
+
+#pb {
+	font-size: 14px;
+	text-align: center;
+	color: #666;
+	margin: 0;
+	padding: 10px 10px 10px 10px;
+	width: 30%;
+	float: left;
+	position: relative;
+	background-color: #d9e3f7;
+    transition: background-color 0.2s ease;
+}
+
+#dt {
+	font-size: 14px;
+	text-align: center;
+	color: #666;
+	margin: 0;
+	padding: 10px 10px 10px 10px;
+	width: 22%;
+	float: left;
+	position: relative;
+	background-color: white;
+    transition: background-color 0.2s ease;
+}
+
+#rm {
+	font-size: 14px;
+	text-align: center;
+	color: #666;
+	margin: 0;
+	padding: 10px 10px 10px 10px;
+	width: 22%;
+	float: left;
+	position: relative;
+	background-color: #d9e3f7;
+    transition: background-color 0.2s ease;
+}
+
+#rev {
+	font-size: 14px;
+	text-align: center;
+	color: #666;
+	margin: 0;
+	padding: 10px 10px 10px 10px;
+	width: 22%;
+	float: left;
+	position: relative;
+	background-color: #d9e3f7;
+    transition: background-color 0.2s ease;
+}
+
+#bk {
+	font-size: 14px;
+	text-align: center;
+	color: #666;
+	margin: 0;
+	padding: 10px 10px 10px 10px;
+	width: 22%;
+	float: left;
+	position: relative;
+	background-color: #d9e3f7;
+    transition: background-color 0.2s ease;
+}
+
+#detail b, #rooms b {
+	font-weight: bold;
+}
+
+#detail {
+	padding-top: 10px;
+}
+
+#rooms {
+	display: none;
+	padding-top: 10px;
+}
+
+#reviews {
+	display: none;
+	padding-top: 10px;
+}
+
+#bookings {
+	display: none;
+	padding-top: 10px;
+}
+
+div#detail input {
+	display: none;
+}
+
+#detail-fac-add {
+	display: none;
+}
+
+#detail-ii-add {
+	display: none;
+}
+
+#pi:hover {
+	background-color: white !important;
+}
+
+#fb:hover {
+	background-color: white !important;
+}
+
+#pb:hover {
+	background-color: white !important;
+}
+
+#dt:hover {
+	background-color: white !important;
+}
+
+#rm:hover {
+	background-color: white !important;
+}
+
+#rev:hover {
+	background-color: white !important;
+}
+
+#bk:hover {
+	background-color: white !important;
+}
+
+.hotel {
+	background-color: #d9e3f7;
+	width: 700px;
+	margin: 0 auto;
+}
+
+.hotel_name {
+
+}
+
+.location {
+
+}
+
+.date {
+
+}
+
+.room_type {
+	width: 200px;
+	float: left;
+}
+
+.room {
+
+}
+
+.booking {
+	background-color: #d9e3f7;
+	width: 700px;
+	margin: 0 auto;
+}
+
+#future-bookings {
+	display: none;
+}
+
+#past-bookings {
+	display: none;
+}
+
+.review {
+	width: 800px;
+	padding: 10px;
+	border: 1px solid #d9e3f7;
+	margin: 0 auto;
+	border-radius: 4px;
+}
+
+#fac {
+	padding-left: 100px;
+}
+
+#ii {
+	padding-left: 100px;
+}
+
+#li {
+	font-size: 14px;
+	text-align: center;
+	color: #666;
+	margin: 2px;
+	padding: 10px 0px 10px 10%;
+	width: 25%;
+	float: left;
+	position: relative;
+	background-color: white;
+	margin-color: grey;
+    transition: background-color 0.2s ease;
+}
+
+#su {
+	font-size: 14px;
+	text-align: center;
+	color: #666;
+	margin: 2px 2px 2px 0px;
+	padding: 10px 0px 10px 0px;
+	width: 25%;
+	float: left;
+	position: relative;
+	background-color: white;
+	margin-color: grey;
+    transition: background-color 0.2s ease;
+}
+
+#h {
+	font-size: 14px;
+	text-align: center;
+	color: #666;
+	margin: 2px 2px 2px 0px;
+	padding: 10px 10% 10px 0px;
+	width: 25%;
+	float: left;
+	position: relative;
+	background-color: white;
+	margin-color: grey;
+    transition: background-color 0.2s ease;
+}
+
+.su_details {
+	float: left;
+	width: 100% ;
+	padding-right: 20px;
+	margin: 0 auto;
+	background-color: white;
+}
+
+#login_form {
+
+}
+
+#signup_form {
+		display: none;
+}
+
+#hotel_form {
+		display: none;
+}
+
+button.login_signup {
+	width: 100%;
+    padding: 16px 26px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 2px solid lightgrey;
+	border-radius: 4px;
+    box-sizing: border-box;
+    box-shadow: 1px 1px 1px grey;
+    white-space: nowrap;
+}
+
+h3.login_signup {
+	text-align: center;
+	font-weight: bold;
+	font-size: 200%
+}
+
+#cancel {
+	background-color: red;
+}
+
+#tlb {
+	background: white;
+    width: 500px;
+    padding: 16px 26px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 2px solid lightgrey;
+	border-radius: 4px;
+    box-sizing: border-box;
+    box-shadow: 1px 1px 1px grey;
+    white-space: nowrap;
+}
+
+.customBtn {
+	
+    background: white;
+    width: 100%;
+    padding: 16px 26px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 2px solid lightgrey;
+	border-radius: 4px;
+    box-sizing: border-box;
+    box-shadow: 1px 1px 1px grey;
+    white-space: nowrap;
+}
+
+span.label {
+    font-family: serif;
+    font-weight: normal;
+}
+span.icon {
+    background: url('/identity/sign-in/g-normal.png') transparent 5px 50% no-repeat;
+    display: inline-block;
+    vertical-align: middle;
+    width: 42px;
+    height: 42px;
+}
+
+button#detail-edit {
+	float: left;
+}
+
+button#detail-save {
+	float: right;
+}
+
+label.remember {
+	float: right;
+}
+
+/* The Modal (background) */
+.modal {
+    display: block; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    max-height: calc(100vh - 210px);
+    overflow-y: auto;
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 30%;
+}
+
+/* The Close Button */
+#close-rooms-modal {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.room-list {
+	width: 100%;
+	padding: 10px;
+	margin: 0 auto;
+    border: 2px solid lightgrey;
+	border-radius: 4px;
+	background-color: white;
+}
+
+.room-list-titles {
+	float: left;
+}
+
+
+/* this is the css for profile pages */
+.future-bookings {
+	width: 100%;
+	padding: 10px;
+	margin: 0 auto;
+    border: 2px solid lightgrey;
+	border-radius: 4px;
+	background-color: white;
+}
+
+.future-bookings-titles {
+	float: left;
+}
+
+.future-bookings-titles label {
+	font-weight: bold;
+}
+
+.past-bookings {
+	width: 100%;
+	padding: 10px;
+	margin: 0 auto;
+    border: 2px solid lightgrey;
+	border-radius: 4px;
+	background-color: white;
+}
+
+.past-bookings-titles {
+	float: left;
+}
+
+.past-bookings-titles label {
+	font-weight: bold;
+}
+
+#personal-info input {
+	display: none;
+}
+
+#personal-info label {
+	font-weight: bold;
+}
+
+#personal-info-edit {
+	float: left;
+}
+
+#personal-info-save {
+	float: right;
+}
+
+/* css for hotel signup page */
+
+.step-current {
+	display: block;
+}
+
+.step-not-current {
+	display: none;
+}
+
+.clearfix:after {
+    clear: both;
+    content: "";
+    display: block;
+    height: 0;
+}
+
+.container {
+	font-family: 'Lato', sans-serif;
+	width: 100%;
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 10px;
+}
+
+.wrapper {
+	display: table-cell;
+	height: 400px;
+}
+
+.nav {
+	margin-top: 40px;
+}
+
+.pull-right {
+	float: right;
+}
+
+a, a:active {
+	color: #333;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #999;
+}
+
+/* Breadcrups CSS */
+
+.arrow-steps .step {
+	font-size: 14px;
+	text-align: center;
+	color: #666;
+	cursor: default;
+	margin: 0 3px;
+	padding: 10px 10px 10px 30px;
+	min-width: 180px;
+	float: left;
+	position: relative;
+	background-color: #d9e3f7;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none; 
+  transition: background-color 0.2s ease;
+}
+
+.arrow-steps .step:after,
+.arrow-steps .step:before {
+	content: " ";
+	position: absolute;
+	top: 0;
+	right: -17px;
+	width: 0;
+	height: 0;
+	border-top: 19px solid transparent;
+	border-bottom: 17px solid transparent;
+	border-left: 17px solid #d9e3f7;	
+	z-index: 2;
+  transition: border-color 0.2s ease;
+}
+
+.arrow-steps .step:before {
+	right: auto;
+	left: 0;
+	border-left: 17px solid #fff;	
+	z-index: 0;
+}
+
+.arrow-steps .step:first-child:before {
+	border: none;
+}
+
+.arrow-steps .step:first-child {
+	border-top-left-radius: 4px;
+	border-bottom-left-radius: 4px;
+}
+
+.arrow-steps .step span {
+	position: relative;
+}
+
+.arrow-steps .step span:before {
+	opacity: 0;
+	content: "✔";
+	position: absolute;
+	top: -2px;
+	left: -20px;
+}
+
+.arrow-steps .step.done span:before {
+	opacity: 1;
+	-webkit-transition: opacity 0.3s ease 0.5s;
+	-moz-transition: opacity 0.3s ease 0.5s;
+	-ms-transition: opacity 0.3s ease 0.5s;
+	transition: opacity 0.3s ease 0.5s;
+}
+
+.arrow-steps .step.current {
+	color: #fff;
+	background-color: #23468c;
+}
+
+.arrow-steps .step.current:after {
+	border-left: 17px solid #23468c;	
+}
+
+/* https://meyerweb.com/eric/tools/css/reset/ */
+/* "Reset" CSS due to problems with a gap at the top of the page */ 
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* ============================================= */
+/* Header bar and website wide styles */
+
+
+body {
+ background-color: #f2f2f2;
+	margin: 0px;
+	padding: 0px;
+}
+
+#fixed {
+	position: sticky;
+	top: 0px;
+	margin-top: 0px;
+}
+
+ul.header {
+    list-style-type: none;
+	overflow: hidden;
+	background-color: white;
+	border-bottom: 2px solid lightgrey;
+}
+li.header {
+	float:right;
+}
+
+ul {
+	list-style-position: inside;
+}
+
+#home {
+	float:left;
+}
+li a {
+    display: block;
+	color: grey;
+	text-align: center;
+	padding: 20px;
+	font-size: 180%;
+	font-family: 'Black Han Sans', sans-serif;
+}
+li a:hover {
+	 background-color:  #fafafa;
+}
+
+#search {
+	position: relative;
+	float:left;
+	font-size:180%;
+	padding:20px;
+	padding-left:50px;
+}
+
+#searchDiv {
+	position:relative;
+	height:45px;
+	width: 1000px;
+}
+
+#searchButton {
+	position:absolute;
+	right:6px;
+	top:9px;
+}
+
+#MainSearch {
+	font-size:180%;
+	padding: 20px;
+	margin: 20px;
+	width: 75%;
+	font-family: 'Roboto', sans-serif;
+	
+}
+
+li input {
+	width:300%;
+	font-size:100%;
+	font-family: 'Roboto', sans-serif;
+
+}
+input[type=text]{
+	border: 2px solid lightgrey;
+	border-radius: 4px;
+}
+input[type=text]:focus{
+	border: 2px solid black;
+	border-radius: 4px;
+}
+
+
+ h3{
+ 	font-family: 'Black Han Sans', sans-serif;
+	
+}
+div{
+	font-family: 'Roboto', sans-serif;
+}
+
+/* home specific css */
+
+#image1 {
+	padding:0px;
+	margin:0px;
+}
+.homeImage{
+
+	width: 100%;
+	height: 35%;
+
+}
+
+ .homeImage img {
+	width:100%;
+
+}
+
+.hometext
+{
+ 	font-size:180%;
+ 	text-align:left;
+ 	margin-left: 12%;
+ 	font-family: 'Roboto', sans-serif;
+}
+
+
+
+/* Hotel.html page styles below */
+
+.HotelFeatures{
+	width: 40%;
+	height: 35%;
+	margin: 0;
+	float: right;
+	display: block;	
+	max-height: 60%;
+	padding: 4px;
+
+}
+
+
+.HotelRooms{
+	width: 40%;
+	height: 35%;
+	margin: 0;
+	float: left;
+	display: block;
+	max-height: 60%;
+	padding: 4px;
+}
+
+
+
+
+
+.hotelImage{
+	width: 40%;
+	height: 35%;
+	margin: 0 auto;
+
+}
+.hotelImage img{
+	width:100%;
+}
+
+
+.HotelContent{
+	overflow: auto;
+	text-align: left;
+	background-color: white;
+	border: 2px solid lightgrey;
+	border-radius: 4px;
+	margin-bottom: 8px;
+	padding: 4px;
+}
+
+
+
+/* styles for the list of rooms in a hotel */
+#roomlist{
+	border: none;
+}
+#roomlist img {
+	width: 40%;
+	height: 40%;
+	float: left;
+}
+
+#roomlist li{
+border: 2px solid lightgrey;
+	border-radius: 4px;
+	margin-bottom: 8px;
+	padding: 4px;
+}
+
+
+
+.innerRoomList{
+	list-style-type:disc; 
+	border: none;
+	text-align: left;
+}
+
+.innerRoomList li{
+	border: none;
+	float: none;
+	text-align: left;
+}
+
+.RoomDescription{
+	text-align: left;
+}
+
+.RoomDescription h3, .RoomDescription p{
+	text-align: left;
+}

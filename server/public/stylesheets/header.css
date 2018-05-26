@@ -1,0 +1,356 @@
+/* https://meyerweb.com/eric/tools/css/reset/ */
+/* "Reset" CSS due to problems with a gap at the top of the page */ 
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* ============================================= */
+/* Header bar and website wide styles */
+
+body {
+	background-color: #f2f2f2;
+	margin: 0px;
+	padding: 0px;
+}
+
+.fixed {
+	position: sticky;
+	top: 0px;
+	margin-top: 0px;
+}
+
+ul {
+    list-style-type: none;
+	overflow: hidden;
+	background-color: white;
+	border-bottom: 2px solid lightgrey;
+}
+li{
+	float:right;
+}
+#home {
+	float:left;
+}
+li a {
+    display: block;
+	color: grey;
+	text-align: center;
+	padding: 20px;
+	font-size: 180%;
+	font-family: 'Black Han Sans', sans-serif;
+}
+li a:hover {
+	 background-color:  #fafafa;
+}
+div { 
+	text-align:center;
+	font-family: 'Roboto', sans-serif;
+}
+#search {
+	position:relative;
+	float:left;
+	font-size:180%;
+	padding:20px;
+	padding-left:50px;
+}
+
+h2 {
+	font-size:200%
+}
+
+#searchDiv {
+	position:relative;
+	height:45px;
+	width: 1000px;
+}
+
+#searchButton {
+	position:absolute;
+	right:6px;
+	top:9px;
+}
+
+#searchButton {
+	background: none;
+	border: none;
+	padding: 0;
+}
+
+#MainSearch {
+	font-size:180%;
+	padding: 20px;
+	margin: 20px;
+	width: 75%;
+	font-family: 'Roboto', sans-serif;
+	
+}
+
+li input {
+	width:100%;
+	font-size:100%;
+	font-family: 'Roboto', sans-serif;
+
+}
+input[type=text]{
+	border: 2px solid lightgrey;
+	border-radius: 4px;
+}
+input[type=text]:focus{
+	border: 2px solid black;
+	border-radius: 4px;
+}
+
+input[type=date]{
+	border: 2px solid lightgrey;
+	border-radius: 4px;
+}
+
+input[type=number]{
+	border: 2px solid lightgrey;
+	border-radius: 4px;
+}
+
+input[type=email]{
+	border: 2px solid lightgrey;
+	border-radius: 4px;
+}
+
+textarea {
+	border: 2px solid lightgrey;
+	border-radius: 4px;
+}
+
+ h3, h4{
+ 	font-family: 'Black Han Sans', sans-serif;
+ 	text-align: center;
+	
+}
+
+/* home specific css */
+
+#image1 {
+	padding:0px;
+	margin:0px;
+}
+.homeImage{
+
+	width: 100%;
+	height: 35%;
+
+}
+
+ .homeImage img {
+	width:100%;
+
+}
+
+.hometext
+{
+ 	font-size:180%;
+ 	text-align:left;
+ 	margin-left: 12%;
+ 	font-family: 'Roboto', sans-serif;
+}
+
+/* Hotel.html page styles below */
+
+.HotelFeatures{
+	width: 40%;
+	height: 35%;
+	margin: 0;
+	float: right;
+	display: block;	
+	max-height: 60%;
+	padding: 4px;
+
+}
+
+.HotelRooms{
+	width: 40%;
+	height: 35%;
+	margin: 0;
+	float: left;
+	display: block;
+	max-height: 60%;
+	padding: 4px;
+}
+
+.hotelImage{
+	width: 40%;
+	height: 35%;
+	margin: 0 auto;
+
+}
+
+.hotelImage img{
+	width:100%;
+}
+
+.HotelContent{
+	overflow: auto;
+	text-align: left;
+	background-color: white;
+	border: 2px solid lightgrey;
+	border-radius: 4px;
+	margin-bottom: 8px;
+	padding: 4px;
+}
+
+/* styles for the list of rooms in a hotel */
+#roomlist{
+	border: none;
+}
+#roomlist img {
+	width: 40%;
+	height: 40%;
+	float: left;
+}
+
+#roomlist li{
+	border: 2px solid lightgrey;
+	border-radius: 4px;
+	margin-bottom: 8px;
+	padding: 4px;
+}
+
+.innerRoomList{
+	list-style-type:disc; 
+	border: none;
+	text-align: left;
+}
+
+.innerRoomList li{
+	border: none;
+	float: none;
+	text-align: left;
+}
+
+.RoomDescription{
+	text-align: left;
+}
+
+.RoomDescription h3, .RoomDescription p{
+	text-align: left;
+}
+
+/*styles for booking page*/
+
+#finalConfirm
+{
+	font-size:180%;
+}
+
+#bookingInfo {
+	width: 50%;
+	margin: auto;
+	display: block;	
+	max-height: 60%;
+	padding: 4px;
+
+}
+
+#bookingDetails {
+	background-color: white;
+	border: 2px solid lightgrey;
+	border-radius: 4px;
+	margin-bottom: 8px;
+	padding: 4px;
+}
+
+#personalDetails {
+	background-color: white;
+	border: 2px solid lightgrey;
+	border-radius: 4px;
+	margin-bottom: 8px;
+	padding: 4px;
+}
+
+#paymentDetails {
+	background-color: white;
+	border: 2px solid lightgrey;
+	border-radius: 4px;
+	margin-bottom: 8px;
+	padding: 4px;
+	width: 50%;
+	margin: auto;
+}
+
+#bookingInfo div, #paymentDetails div
+{
+	text-align: left;
+}
+
+/*====Search results CSS====*/
+.searchDiv {
+	float: left;
+	width: calc(50% - 1px);
+	height: 2000px;
+}
+
+#rightDiv {
+	float:right;
+	border-left: 2px solid black;
+}
+
+.searchResult {
+	background-color: white;
+	margin: 20px;
+	border: 2px solid lightgrey;
+	padding: 5px;
+	overflow: hidden;
+}
+
+.searchImg {
+	float:left;
+}
+
+.searchTxt {
+	position: relative;
+	margin-left: 200px;
+	text-align: left;
+	margin-right: 0px;
+	margin-left: 250px;
+}
+
+
+ul {
+	list-style-position: inside;
+}
+
+.bookDiv {
+	text-align:right;
+}
+
+.srName {
+	text-align: left;
+	width: 50%;
+	float: left;
+}
+
+.srReview {
+		text-align: left;
+		width: 49%;
+		float:right;
+}
+
+.srAddress {
+		text-align: left;
+}

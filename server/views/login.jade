@@ -1,0 +1,70 @@
+doctype html
+html(lang='en')
+	head
+		title signup and login
+		link(rel='stylesheet', type='text/css', href='/stylesheets/login.css')
+		script(src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js')
+		link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')
+		script(src='/javascripts/hotel.js')
+		script(src='/javascripts/authID.js')
+		meta(name='google-signin-client_id', content='868785977270-a5t6m61fcnoa1ual3ejd311cs1p3i5l3.apps.googleusercontent.com')
+		script(src='https://apis.google.com/js/platform.js', async='', defer='')
+
+	body
+		//button#tlb(onclick="document.getElementById('login').style.display='block'", style='width:auto;') Login
+		#login.modal
+			.modal-content
+				.su_details.su_clearfix
+					#li
+						b login
+					#su
+						b signup
+					#h
+						b hotel
+				hr
+				form#login_form(action='/login.html', method='post')
+					h3.login_signup Login
+					.g-signin2(data-onsuccess='onSignIn', data-theme='dark')
+					hr
+					label(for='email')
+						b Email
+					input(type='text', placeholder='Enter E-mail', name='email', required='')
+					label(for='password')
+						b Password
+					input(type='password', placeholder='Enter Password', name='password', required='')
+					button.login_signup(type='submit') Login
+					input(type='checkbox', checked='checked', name='remember')
+					label.remember Remember me
+				form#signup_form(action='/login.html', method='post')
+					h3.login_signup Signup
+					#openID_signup.customBtn
+						span.fa.fa-google
+						span.buttonText signup with Google
+					hr
+					label(for='fname')
+						b First Name
+					input(type='text', placeholder='Enter first name', name='fname', required='')
+					label(for='lname')
+						b Last Name
+					input(type='text', placeholder='Enter surname', name='lname', required='')
+					label(for='email')
+						b Email
+					input(type='text', placeholder='Enter e-mail', name='email', required='')
+					label(for='password')
+						b Password
+					input(type='password', placeholder='Enter Password', name='password', required='')
+					button.login_signup(type='submit') Signup
+				form#hotel_form(action='/login.html', method='post')
+					h3.login_signup Hotel Login
+					label(for='hotelid')
+						b Hotel ID
+					input(type='text', placeholder='Enter Username', name='hotelid', required='')
+					label(for='password')
+						b Password
+					input(type='password', placeholder='Enter Password', name='password', required='')
+					button.login_signup(type='submit') Login
+					hr
+					h3.login_signup Hotel Signup
+				form#hotel_signup(action='/hotel_signup.html', style="display:none;")
+					button.login_signup Signup Your Hotel
+				button#cancel.login_signup Cancel

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+	<title>title</title>
+
+	<meta charset="utf-8">
+
+	<link rel="stylesheet" type="text/css" href="login.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Black+Han+Sans">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="hotel.js"></script>
+	
+</head>
+<body>
+
+	<div id="fixed"> 
+		<ul class="header">
+			<li class="header" id="home"><a href="index.html">Hotelz</a></li>
+			<li class="header"><a href="account.html">Account</a></li>
+			<li class="header"><a href="help.html">help</a></li>
+			<li class="header" id="search"><input type="text" name="search" placeholder="Where do you want to go?"></li>
+		</ul>
+	</div>
+
+	<div class="container">
+		<div class="wrapper">
+			<div class="details clearfix">
+				<div id="dt" >Details</div>
+				<div id="rm" >Rooms</div>
+				<div id="rev" >Reviews</div>
+				<div id="bk" >Bookings</div>
+			</div>
+
+			<div id="detail">
+
+				<label for="desc"><b>Description:</b></label><p id="description"> this is the description</p>
+				<input type="text" placeholder="Enter Hotel Description" id="desc" required>
+				<br>
+
+		 	    <label for="psw"><b>Password:</b></label><p id="password">this is yous password</p>
+ 		 	    <input type="password" placeholder="Enter Password" id="psw">
+ 		 	    <br>
+
+ 		 	    <label for="hname"><b>Hotel Name:</b></label><p id="hotelName">this is yous hotel name</p>
+		 	    <input type="text" placeholder="Enter Hotel Name" id="hname">
+		 	    <br>
+
+ 				<label for="locn"><b>Location:</b></label><p id="location">this is yous location</p>
+ 				<input type="text" placeholder="Enter location" id="locn" required>
+ 				<br>
+
+ 				<label for="cont"><b>Phone Number:</b></label><p id="content">this is yous phone number</p>
+ 				<input type="text" placeholder="Enter Phone Number" id="cont" required>
+ 				<br>
+
+		 	    <label for="email"><b>Email:</b></label><p id="userEmail">this is yous email</p>
+		 	    <input type="email" placeholder="Enter Email" id="email">
+		 	    <br>
+
+		 	    <label for="fac"><b>Facilities:</b></label>
+ 				<input type="text" placeholder="Enter a Facility" id="fac">
+ 				<button id="detail-fac-add">Add Facility</button>
+
+ 				<div id="fac1">
+ 					<ul>
+ 						<li class="fac-list">fac 1</li>
+ 						<li class="fac-list">fac 2</li>
+ 						<li class="fac-list">fac 3</li>
+ 						<li class="fac-list">fac 4</li>
+ 					</ul>
+ 				</div>
+ 				<br>
+
+ 				<label for="ii"><b>Important Information:</b></label>
+ 				<input type="text" placeholder="Enter some important information: rules, reception times, etc..." id="ii">
+ 				<button id="detail-ii-add">Add Important Information</button>
+
+ 				<div id="ii1">
+ 					<ul>
+ 						<li class="ii">ii</li>
+ 						<li class="ii">ii</li>
+ 						<li class="ii">ii</li>
+ 						<li class="ii">ii</li>
+ 					</ul>
+ 				</div>
+ 				<br><br>
+
+ 				<button id="detail-edit">Edit</button>
+ 				<button id="detail-save">Save</button>
+
+			</div>
+
+			<div id="rooms">
+
+				<!-- Trigger/Open The Modal -->
+				<button id="rooms-modal-Btn">Open Modal</button>
+
+				<div id="rooms-modal" class="modal">
+
+    				<!-- Modal content -->
+    				<div class="modal-content">
+    					<span id="close-rooms-modal">&times;</span>
+
+						<label for="Rname"><b>Room Name</b></label>
+						<input type="text" placeholder="Enter Room Name" id="Rname" required>
+
+						<label for="guests"><b>Guests</b></label>
+			 			<input type="number" id="guests" placeholder="Enter Number of Guests" min="1" required>
+
+ 						<label for="beds"><b>Beds</b></label>
+ 						<input type="number" id="beds" placeholder="Enter Number of Beds" min="1" required>
+
+	 					<label for="baths"><b>Bathrooms</b></label>
+ 						<input type="number" placeholder="Enter Number of Bathtooms" id="baths" min="1" required>
+
+ 						<label for="rdesc"><b>Description</b></label>
+						<input type="text" placeholder="Enter Room Description" id="rdesc" required>
+
+ 						<button>Add Room</button>
+
+ 					</div>
+ 				</div>
+ 				
+ 				<hr>
+
+ 				<label><b>Rooms</b></label>
+
+ 				<div class="room-list">
+
+ 					<div class="room-list-titles">
+						<label for="Rname"><b>Room Name:  </b></label><br>
+						<label for="guests"><b>Guests:     </b></label><br>
+ 						<label for="beds"><b>Beds:       </b></label><br>
+	 					<label for="baths"><b>Bathrooms:  </b></label><br>
+ 						<label for="rdesc"><b>Description:</b></label><br>
+ 					</div>
+
+					<p class="room_name">room name</p>
+					<p class="quests">6</p>
+					<p class="beds">4</p>
+					<p class="baths">2</p>
+					<p class="description">this is a short description of the room</p>
+				</div>
+			</div>
+
+			<div id="reviews">
+
+				<div class="review">
+					<label><b>Rate:</b></label>
+					<p>n/5</p>
+
+					<label><b>Comment:</b></label>
+					<p>this is a sample review comment</p>
+				</div>
+			</div>
+
+			<div id="bookings">
+
+				<div class="room_type">
+					<ul>
+ 						<li class="room">room 1</li>
+ 						<li class="room">room 2</li>
+ 						<li class="room">room 3</li>
+ 						<li class="room">room 4</li>
+ 					</ul>
+				</div>
+
+				<div class="booking">
+					<p class="room_name">room name</p>
+					<p class="name">Name</p>
+					<p class="date_in">date in</p>
+					<p class="date_out">date out</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

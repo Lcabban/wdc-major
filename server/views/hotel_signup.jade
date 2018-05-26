@@ -1,0 +1,96 @@
+doctype html
+html(lang='en')
+  head
+    title title
+    meta(charset='UTF-8')
+    link(rel='stylesheet', type='text/css', href='/stylesheets/login.css')
+    link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Black+Han+Sans')
+    link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Roboto')
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')
+    script(src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js')
+    script(src='/javascripts/hotel.js')
+  body
+    #fixed
+      ul.header
+        li#home.header
+          a(href='index.html') Hotelz
+        li.header
+          a(href='account.html') #{username}
+        li.header
+        a(href='help.html') help
+                li#search
+                    #searchDiv
+                        form(action='search.html')
+                            input(type='text', name='search', placeholder='Where do you want to go?')
+                            button#searchButton(type='submit')
+                                i.fa.fa-search
+    .container
+      .wrapper
+        .arrow-steps.clearfix
+          #step-1.step.current
+            span  Step 1
+          #step-2.step
+            span Step 2
+          #step-3.step
+            span  Step 3
+          #step-4.step
+            span Step 4
+        .steps.step-current
+          label(for='psw')
+            b Password
+          input#psw(type='password', placeholder='Enter Password', required='')
+          label(for='hname')
+            b Hotel Name
+          input#hname(type='text', placeholder='Enter Hotel Name', required='')
+          label(for='locat')
+            b Location
+          input#locat(type='text', placeholder='Enter location', required='')
+          label(for='contact')
+            b Phone Number
+          input#contact(type='text', placeholder='Enter Phone Number', required='')
+          label(for='desc')
+            b Description
+          input#desc(type='text', placeholder='Enter Hotel Description', required='')
+        .steps.step-not-current
+          label(for='fac')
+            b Facilities
+          input#fac(type='text', placeholder='Enter a Facility')
+          #fac1
+            ul
+              li.fac-list fac 1
+              li.fac-list fac 2
+              li.fac-list fac 3
+              li.fac-list fac 4
+          button#step2-add Add
+        .steps.step-not-current
+          label(for='Rname')
+            b Room Name
+          input#Rname(type='text', placeholder='Enter Room Name', required='')
+          label(for='guests')
+            b Guests
+          input#guests(type='number', placeholder='Enter Number of Guests', min='1', required='')
+          label(for='beds')
+            b Beds
+          input#beds(type='number', placeholder='Enter Number of Beds', min='1', required='')
+          label(for='baths')
+            b Bathrooms
+          input#baths(type='number', placeholder='Enter Number of Bathtooms', min='1', required='')
+          label(for='rdesc')
+            b Description
+          input#rdesc(type='text', placeholder='Enter Room Description', required='')
+          button Add Room
+          button#step3-back Previous
+          button#step3-next Next
+        .steps.step-not-current
+          label(for='title')
+            b Title
+          input#title(type='text', placeholder='Enter the Title of the Important Information')
+          label(for='iidesc')
+            b Description
+          input#iidesc(type='text', placeholder='Enter Room Description', required='')
+          button Add Important Information
+          button#step4-back Previous
+          button#step4-finish Finish
+        .nav.clearfix
+          a.prev(href='#') Previous
+          a.next.pull-right(href='#') Next
