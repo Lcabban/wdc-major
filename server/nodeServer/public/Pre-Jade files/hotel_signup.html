@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+<html lang = "en">
+	
+<head>
+	<title>title</title>
+	<meta charset="UTF-8">
+	
+	<link rel="stylesheet" type="text/css" href="login.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Black+Han+Sans">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="hotel.js"></script>
+</head>
+<body>
+
+	<div id="fixed"> 
+		<ul class="header">
+			<li class="header" id="home"><a href="index.html">Hotelz</a></li>
+			<li class="header"><a href="account.html">Account</a></li>
+			<li class="header"><a href="help.html">help</a></li>
+			<li class="header" id="search"><input type="text" name="search" placeholder="Where do you want to go?"></li>
+		</ul>
+	</div>
+
+<div class="container">	
+	<div class="wrapper">	
+		<div class="arrow-steps clearfix">
+	 	 	<div id="step-1" class="step current"> <span> Step 1</span> </div>
+	 		<div id="step-2" class="step"> <span>Step 2</span> </div>
+	 		<div id="step-3" class="step"> <span> Step 3</span> </div>
+   	    	<div id="step-4" class="step"> <span>Step 4</span> </div>
+		</div>
+
+		<div class="steps step-current">
+
+			<label for="psw"><b>Password</b></label>
+ 			<input type="password" placeholder="Enter Password" id="psw" required>
+
+ 			<label for="hname"><b>Hotel Name</b></label>
+ 			<input type="text" placeholder="Enter Hotel Name" id="hname" required>
+
+ 			<label for="locat"><b>Location</b></label>
+ 			<input type="text" placeholder="Enter location" id="locat" required>
+
+ 			<label for="contact"><b>Phone Number</b></label>
+ 			<input type="text" placeholder="Enter Phone Number" id="contact" required>
+
+ 			<label for="desc"><b>Description</b></label>
+			<input type="text" placeholder="Enter Hotel Description" id="desc" required>
+
+			<button id="step1-next">Next</button>
+
+		</div>
+			
+		<div class="steps step-not-current">
+			<label for="fac"><b>Facilities</b></label>
+ 			<input type="text" placeholder="Enter a Facility" id="fac">
+
+ 			<div id="fac1">
+ 				<ul>
+ 					<li class="fac-list">fac 1</li>
+ 					<li class="fac-list">fac 2</li>
+ 					<li class="fac-list">fac 3</li>
+ 					<li class="fac-list">fac 4</li>
+ 				</ul>
+ 			</div>
+
+ 			<button id="step2-back">Previous</button>
+ 			<button id="step2-next">Next</button>
+		</div>
+
+		<div class="steps step-not-current">
+			
+			<label for="Rname"><b>Room Name</b></label>
+			<input type="text" placeholder="Enter Room Name" id="Rname" required>
+
+			<label for="guests"><b>Guests</b></label>
+ 			<input type="number" id="guests" placeholder="Enter Number of Guests" min="1" required>
+
+ 			<label for="beds"><b>Beds</b></label>
+ 			<input type="number" id="beds" placeholder="Enter Number of Beds" min="1" required>
+
+ 			<label for="baths"><b>Bathrooms</b></label>
+ 			<input type="number" placeholder="Enter Number of Bathtooms" id="baths" min="1" required>
+
+ 			<label for="rdesc"><b>Description</b></label>
+			<input type="text" placeholder="Enter Room Description" id="rdesc" required>
+
+ 			<button>Add Room</button>
+
+ 			<button id="step3-back">Previous</button>
+ 			<button id="step3-next">Next</button>
+		</div>
+
+		<div class="steps step-not-current">
+			<label for="title"><b>Title</b></label>
+			<input type="text" placeholder="Enter the Title of the Important Information" id="title">
+
+			<label for="iidesc"><b>Description</b></label>
+			<input type="text" placeholder="Enter Room Description" id="iidesc" required>
+
+			<button>Add Important Information</button>
+
+			<button id="step4-back">Previous</button>
+ 			<button id="step4-finish">Finish</button>
+		</div>
+
+		<div class="nav clearfix">
+        <a href="#" class="prev">Previous</a>
+        <a href="#" class="next pull-right">Next</a>
+		</div>
+</div>
+</div>
+</body>
+</html>

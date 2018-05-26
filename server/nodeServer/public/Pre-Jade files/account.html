@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+	<title>title</title>
+	<meta charset="UTF-8">
+	
+	<link rel="stylesheet" type="text/css" href="login.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Black+Han+Sans">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="hotel.js"></script>
+
+</head>
+<body>
+	<div id="fixed"> 
+		<ul class="header">
+			<li class="header" id="home"><a href="index.html">Hotelz</a></li>
+			<li class="header"><a href="account.html">Account</a></li>
+			<li class="header"><a href="help.html">help</a></li>
+			<form action="search.html">
+			<li class="header" id="search"><input type="text" name="search" placeholder="Where do you want to go?"></li>
+		</form>
+		</ul>
+	</div>
+	<div class="container">
+		<div class="wrapper">
+			<div class="details clearfix">
+				<dir id="pi">Personal Information</dir>
+				<div id="fb">Future Bookings</div>
+				<div id="pb">Past Bookings</div>
+			</div>
+
+			<br><br><br>
+
+			<div id="personal-info">
+		 		<label for="psw"><b>Password:</b></label><p id="user-password">this is your password</p>
+ 				<input type="password" placeholder="Enter Password" id="psw">
+ 		 		<br>
+
+ 				<label for="fname"><b>First Name:</b></label><p id="user-first-name">this is your first name</p>
+				<input type="text" placeholder="First Name" id="fname">
+				<br>
+
+				<label for="sname"><b>Second Name:</b></label><p id="user-last-name">this is your last name</p>
+				<input type="text" placeholder="Second Name" id="sname">
+				<br>
+
+				<label for="email"><b>Email:</b></label><p id="user-email">this is your email</p>
+		 		<input type="email" placeholder="Enter Email" id="email">
+				<br><br>
+
+				<button id="personal-info-edit">Edit</button>
+ 				<button id="personal-info-save">Save</button>
+ 			</form>
+			</div>
+			<div id="future-bookings">
+				<div class="future-bookings">
+ 					<div class="future-bookings-titles">
+						<label><b>Hotel Name: </b></label><br>
+						<label><b>location:   </b></label><br>
+ 						<label><b>Date In:    </b></label><br>
+	 					<label><b>Date Out:   </b></label><br>
+ 					</div>
+
+					<p class="future-hotel_name">hotel name</p>
+					<p class="future-locations">adelaide</p>
+					<p class="future-date-in">24th april 2018</p>
+					<p class="future-date-out">29th april 2018</p>
+
+					<button id="cancel-booking">Cancel Booking</button>
+
+				</div>
+			</div>
+
+			<div id="past-bookings">
+				<div class="past-bookings">
+ 					<div class="past-bookings-titles">
+						<label><b>Hotel Name: </b></label><br>
+						<label><b>location:   </b></label><br>
+ 						<label><b>Date In:    </b></label><br>
+	 					<label><b>Date Out:   </b></label><br>
+ 					</div>
+					<p class="past-hotel_name">hotel name</p>
+					<p class="past-locations">adelaide</p>
+					<p class="past-date-in">24th april 2018</p>
+					<p class="past-date-out">29th april 2018</p>
+
+					<button id="review-hotel">Review Hotel</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,7 @@
+[
+	{"id":"0", "email":"hotelz", "fname":"John", "lname":"Big", "password":"Hotelz123","type":"admin"},
+	{"id":"1", "authToken":"eyJhbGciOiJSUzI1NiIsImtpZCI6ImE3NDhlOWY3NjcxNTlmNjY3YTAyMjMzMThkZTBiMjMyOWU1NDQzNjIifQ.eyJhenAiOiI4Njg3ODU5NzcyNzAtYTV0Nm02MWZjbm9hMXVhbDNlamQzMTFjczFwM2k1bDMuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJhdWQiOiI4Njg3ODU5NzcyNzAtYTV0Nm02MWZjbm9hMXVhbDNlamQzMTFjczFwM2k1bDMuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJzdWIiOiIxMTgyNzc5NTQwMTg3MjE1MjYxMzUiLCJlbWFpbCI6ImNib3ljZTM3NkBnbWFpbC5jb20iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiYXRfaGFzaCI6IjROLWpaVUpUVl9PcVpKRWpaWVhwSFEiLCJleHAiOjE1MjYzMDIzNzQsImlzcyI6ImFjY291bnRzLmdvb2dsZS5jb20iLCJqdGkiOiJmMzM4MjI2MjhjYzY2NDI1ZmQ5NzgwMDlkYTk4NjE2NDFhZTg3ZWEwIiwiaWF0IjoxNTI2Mjk4Nzc0LCJuYW1lIjoiQ2hyaXMgQm95Y2UiLCJwaWN0dXJlIjoiaHR0cHM6Ly9saDUuZ29vZ2xldXNlcmNvbnRlbnQuY29tLy00VVFuS3gtTkhTWS9BQUFBQUFBQUFBSS9BQUFBQUFBQUFBQS9BSWNmZFhEUWRnbDN4YTV4ZTlpRDNFZ3JFeUtYUG9aVk9RL3M5Ni1jL3Bob3RvLmpwZyIsImdpdmVuX25hbWUiOiJDaHJpcyIsImZhbWlseV9uYW1lIjoiQm95Y2UiLCJsb2NhbGUiOiJlbiJ9.l4-hspIYfGg1B53WGM65fCaWn8a1_5IeSNIftcIbo-ceHUXk1kyrcFJOfA1ZAfy7VfpX-5HLCjHrcsTnK4B4J8_m-ELEqPlnFGeAKXYdjIk667amJUKzJld5es8Of4sSRSHTiJjhwSg_hK0SoSs9FrZQmxQk1mQr7Bqefi9T-ppECiQXzD1EE4-VOFF054T-e2JmKHw8O8jP40TqxkExpCObHS9vd6_p-LZxFBteit326VKQb2f5xyG7xdmv6HRPK20tu4YmC-1d0B0BEkjdYi20kUSvemUgBvLDAtpbMWK0-QACIZ4AIXOb4vglVC_rJLYOBCJCMXjFelnX54OGfQ",
+	"email":"customer", "fname":"Joe", "lname":"Small", "password":"password","type":"customer"}, 
+	{"id":"2", "email":"hotel", "fname":"HotelName", "lname":"Bug", "password":"password","type":"hotel"}
+
+]

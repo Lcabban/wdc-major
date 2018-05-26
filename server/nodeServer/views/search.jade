@@ -1,0 +1,36 @@
+doctype html
+html(lang='en')
+  head
+    title Hotelz
+    link(rel='stylesheet', type='text/css', href='/stylesheets/header.css')
+    link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Black+Han+Sans')
+    link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Roboto')
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')
+    style.
+      #map {
+      height: 600px;
+      width: 100%;
+      }
+  body
+    // Header bar
+    .fixed
+      ul
+        li#home
+          a(href='index.html') Hotelz
+        li
+          a(href='account.html') #{username}
+        li
+          a(href='help.html') help
+        li#search
+          #searchDiv
+            form(action='search.html')
+              input(type='text', name='search', placeholder='Where do you want to go?')
+              button#searchButton(type='submit')
+                i.fa.fa-search
+    // Page code
+    #leftDiv.searchDiv
+      script(src='javascripts/searchResults.js')
+    #rightDiv.searchDiv
+      #map
+        script(src='javascripts/map.js')
+        script(async='', defer='', src='https://maps.googleapis.com/maps/api/js?key=AIzaSyBoGfWTN5a2HIBzamyHxp6QIrtWWs9Fkks&callback=initMap')

@@ -1,0 +1,35 @@
+doctype html
+html(lang='en')
+	head
+		title Hotelz
+		link(rel='stylesheet', type='text/css', href='/stylesheets/header.css')
+		link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Black+Han+Sans')
+		link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Roboto')
+		link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')
+	body
+		// Header bar
+		.fixed
+			ul
+				li#home
+					a(href='index.html') Hotelz
+				li
+					a(href='account.html') #{username}
+				li
+					a(href='help.html') help
+				li#search
+					#searchDiv
+						form(action='search.html')
+							input(type='text', name='search', placeholder='Where do you want to go?')
+							button#searchButton(type='submit')
+								i.fa.fa-search
+		// Page code
+		div
+			// image 1 for background
+			#image1.homeImage
+				img(src='hotelimg1.jpg', alt='Test image')
+			// center search bar and text
+			p.hometext Find your Place.
+			input#MainSearch(type='text', name='MainSearch', placeholder='Where do you want to go?')
+			// last image
+			.homeImage
+				img(src='hotelimg2.jpg', alt='Test image')

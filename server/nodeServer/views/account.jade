@@ -1,0 +1,96 @@
+doctype html
+html(lang='en')
+  head
+    title title
+    meta(charset='UTF-8')
+    link(rel='stylesheet', type='text/css', href='/stylesheets/login.css')
+    link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Black+Han+Sans')
+    link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Roboto')
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')
+    script(src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js')
+    script(src='/javascripts/hotel.js')
+  body
+    #fixed
+      ul.header
+        li#home.header
+          a(href='index.html') Hotelz
+        li.header
+          a(href='account.html') #{username}
+        li.header
+          a(href='help.html') help
+        form(action='search.html')
+          li#search.header
+            input(type='text', name='search', placeholder='Where do you want to go?')
+    .container
+      .wrapper
+        .details.clearfix
+          dir#pi Personal Information
+          #fb Future Bookings
+          #pb Past Bookings
+        br
+        br
+        br
+        #personal-info
+          label(for='psw')
+            b Password:
+          p#user-password #{password}
+          input#psw(type='password', placeholder='Enter Password')
+          br
+          label(for='fname')
+            b First Name:
+          p#user-first-name #{fname}
+          input#fname(type='text', placeholder='First Name')
+          br
+          label(for='sname')
+            b Second Name:
+          p#user-last-name #{lname}
+          input#sname(type='text', placeholder='Second Name')
+          br
+          label(for='email')
+            b Email:
+          p#user-email #{email}
+          input#email(type='email', placeholder='Enter Email')
+          br
+          br
+          button#personal-info-edit Edit
+          button#personal-info-save Save
+        #future-bookings
+          .future-bookings
+            .future-bookings-titles
+              label
+                b Hotel Name: 
+              br
+              label
+                b location:   
+              br
+              label
+                b Date In:    
+              br
+              label
+                b Date Out:   
+              br
+            p.future-hotel_name hotel name
+            p.future-locations adelaide
+            p.future-date-in 24th april 2018
+            p.future-date-out 29th april 2018
+            button#cancel-booking Cancel Booking
+        #past-bookings
+          .past-bookings
+            .past-bookings-titles
+              label
+                b Hotel Name: 
+              br
+              label
+                b location:   
+              br
+              label
+                b Date In:    
+              br
+              label
+                b Date Out:   
+              br
+            p.past-hotel_name hotel name
+            p.past-locations adelaide
+            p.past-date-in 24th april 2018
+            p.past-date-out 29th april 2018
+            button#review-hotel Review Hotel
