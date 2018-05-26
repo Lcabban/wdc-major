@@ -12,7 +12,7 @@ var app = express();
 
 //Config MySQL
 var mysql = require('mysql'); 
-var dbConnectionPool = mysql.createPool({ host: 'localhost', user: 'root', password: '@@@@',database: 'PhoneCompany'});
+var dbConnectionPool = mysql.createPool({ host: 'localhost', user: 'root', password: '@@@@',database: 'hotelz'});
 
 app.use(function(req, res, next) { req.pool = dbConnectionPool; next(); }); 
 
