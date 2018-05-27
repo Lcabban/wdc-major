@@ -16,30 +16,21 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Dumping data for table `account`
+-- Dumping data for table `booking`
 --
 
-LOCK TABLES `account` WRITE;
-/*!40000 ALTER TABLE `account` DISABLE KEYS */;
-/*!40000 ALTER TABLE `account` ENABLE KEYS */;
+LOCK TABLES `booking` WRITE;
+/*!40000 ALTER TABLE `booking` DISABLE KEYS */;
+/*!40000 ALTER TABLE `booking` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
--- Dumping data for table `bookings`
+-- Dumping data for table `customer_account`
 --
 
-LOCK TABLES `bookings` WRITE;
-/*!40000 ALTER TABLE `bookings` DISABLE KEYS */;
-/*!40000 ALTER TABLE `bookings` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
--- Dumping data for table `customer`
---
-
-LOCK TABLES `customer` WRITE;
-/*!40000 ALTER TABLE `customer` DISABLE KEYS */;
-/*!40000 ALTER TABLE `customer` ENABLE KEYS */;
+LOCK TABLES `customer_account` WRITE;
+/*!40000 ALTER TABLE `customer_account` DISABLE KEYS */;
+/*!40000 ALTER TABLE `customer_account` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -52,12 +43,30 @@ LOCK TABLES `hotel` WRITE;
 UNLOCK TABLES;
 
 --
--- Dumping data for table `rooms`
+-- Dumping data for table `hotel_account`
 --
 
-LOCK TABLES `rooms` WRITE;
-/*!40000 ALTER TABLE `rooms` DISABLE KEYS */;
-/*!40000 ALTER TABLE `rooms` ENABLE KEYS */;
+LOCK TABLES `hotel_account` WRITE;
+/*!40000 ALTER TABLE `hotel_account` DISABLE KEYS */;
+/*!40000 ALTER TABLE `hotel_account` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Dumping data for table `review`
+--
+
+LOCK TABLES `review` WRITE;
+/*!40000 ALTER TABLE `review` DISABLE KEYS */;
+/*!40000 ALTER TABLE `review` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Dumping data for table `room`
+--
+
+LOCK TABLES `room` WRITE;
+/*!40000 ALTER TABLE `room` DISABLE KEYS */;
+/*!40000 ALTER TABLE `room` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
@@ -69,4 +78,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2018-05-27 15:56:13
+-- Dump completed on 2018-05-27 17:38:12
