@@ -302,12 +302,10 @@ textarea {
 .searchDiv {
 	float: left;
 	width: calc(50% - 1px);
-	height: 2000px;
 }
 
 #rightDiv {
 	float:right;
-	border-left: 2px solid black;
 }
 
 .searchResult {
