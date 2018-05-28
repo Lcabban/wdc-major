@@ -243,7 +243,6 @@ div#detail input {
 	float: left;
 	position: relative;
 	background-color: white;
-	margin-color: grey;
     transition: background-color 0.2s ease;
 }
 
@@ -257,7 +256,6 @@ div#detail input {
 	float: left;
 	position: relative;
 	background-color: white;
-	margin-color: grey;
     transition: background-color 0.2s ease;
 }
 
@@ -271,7 +269,6 @@ div#detail input {
 	float: left;
 	position: relative;
 	background-color: white;
-	margin-color: grey;
     transition: background-color 0.2s ease;
 }
 
