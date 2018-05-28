@@ -26,7 +26,7 @@ var populate = [	"",
 					];
 for (i = 0; i < className.length; i++) {
 	for (j = 0; j < 10; j++) {
-		newDiv = document.createElement("div");
+		var newDiv = document.createElement("div");
 		newDiv.className = className[i];
 		if (i === 0) {
 			document.getElementById("leftDiv").appendChild(newDiv);
