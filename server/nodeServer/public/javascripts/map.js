@@ -3,6 +3,7 @@ function initMap() {
 	var url_string = window.location.href;
 	var url = new URL(url_string);
 	var loc = url.searchParams.get("search");
+  var google;
 	if (loc === '') {
 		loc="Adelaide";
 	}
@@ -47,7 +48,7 @@ function initMap() {
 			return function() {
 			infowindow.setContent(locations[i][0]);
 			infowindow.open(map, marker);
-			}
+			};
 		})(marker, i));
 		}
 	});

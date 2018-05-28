@@ -1,4 +1,6 @@
 
+/*jshint browser: true*/ /*global  jQuery*/
+/*jshint browser: true*/ /*global  $*/
 $( document ).ready(function() {
 	$("#dt").click(function() {
 		$("#detail").show();
@@ -45,7 +47,7 @@ $( document ).ready(function() {
 		$("#rooms-modal-Btn").click(function() {
 			$("#rooms-modal").show();
 	});
-})
+});
 
 $( document ).ready(function() {
 		$("#close-rooms-modal").click(function() {
@@ -134,14 +136,14 @@ $( document ).ready(function() {
 	$("#step4-finish").click(function() {
 
 	});
-})
+});
 
 jQuery( document ).ready(function() {
 		
 		var back =jQuery(".prev");
 		var	next = jQuery(".next");
 		var	steps = jQuery(".step");
-		var div_steps = jQuery(".steps")
+		var div_steps = jQuery(".steps");
 		
 		next.bind("click", function() { 
 			jQuery.each( steps, function( i ) {
@@ -152,7 +154,7 @@ jQuery( document ).ready(function() {
 					jQuery(div_steps[i - 1]).removeClass('step-current').addClass('step-not-current');
 					return false;
 				}
-			})		
+			});	
 		});
 		back.bind("click", function() { 
 			jQuery.each( steps, function( i ) {
@@ -163,7 +165,7 @@ jQuery( document ).ready(function() {
 					jQuery(div_steps[i + 1]).removeClass('step-current').addClass('step-not-current');
 					return false;
 				}
-			})		
+			});	
 		});
 
 	});
