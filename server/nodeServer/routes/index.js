@@ -65,8 +65,9 @@ router.get('/login.html',function(req,res,next) {
 
 router.get('/search.html',function(req,res,next) {
 		res.render('search', {	"username":greetName,
+								"image1": "hotelimg1.jpg",
 								"hotel1": "Ibis Adelaide",
-								"address1": "122 Grenfell st"
+								"address1": "122 Grenfell st",
 								"hotel2": "Hilton Hotel",
 								"address2": "233 Victoria sq"
 		});

@@ -31,7 +31,7 @@ html(lang='en')
     #leftDiv.searchDiv
         .searchResult
             .searchImg
-                img(src='hotelimg2.jpg', alt='Hotel image', width='240', height='135')
+                img(src='#{image1}', alt='Hotel image', width='240', height='135')
             .searchTxt
                 .srName
                     h2 #{hotel1}
@@ -47,11 +47,11 @@ html(lang='en')
                 img(src='hotelimg2.jpg', alt='Hotel image', width='240', height='135')
             .searchTxt
                 .srName
-                    h2 Name
+                    h2 #{hotel2}
                 .srReview
                     p ★ ★ ★ ★ ☆ 
                 .srAddress
-                    p NAME
+                    p #{address2}
                 .bookDiv
                     form(action='hotel.html')
                         button(type='submit') Book now!
