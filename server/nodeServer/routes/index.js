@@ -35,7 +35,7 @@ router.get('/booking_page.html',function(req,res,next) {
 });
 
 router.get('/help.html',function(req,res,next) {
-		res.render('help', {"username": greetName});
+		res.redirect('http://google.com.au');
 });
 
 router.get('/hotel.html',function(req,res,next) {
