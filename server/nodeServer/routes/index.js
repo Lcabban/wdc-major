@@ -35,7 +35,7 @@ router.get('/booking_page.html',function(req,res,next) {
 });
 
 router.get('/help.html',function(req,res,next) {
-		res.render('help', {"username": greetName});
+		res.redirect('http://google.com.au');
 });
 
 router.get('/hotel.html',function(req,res,next) {
@@ -65,8 +65,11 @@ router.get('/login.html',function(req,res,next) {
 
 router.get('/search.html',function(req,res,next) {
 		res.render('search', {	"username":greetName,
+								"image1": "ibisAdelaide.jpg",
 								"hotel1": "Ibis Adelaide",
-								"address1": "122 Grenfell st"
+								"address1": "122 Grenfell st",
+								"hotel2": "Hilton Hotel",
+								"address2": "233 Victoria sq"
 		});
 });
 
