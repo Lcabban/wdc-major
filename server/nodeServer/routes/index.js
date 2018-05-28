@@ -67,6 +67,8 @@ router.get('/search.html',function(req,res,next) {
 		res.render('search', {	"username":greetName,
 								"hotel1": "Ibis Adelaide",
 								"address1": "122 Grenfell st"
+								"hotel2": "Hilton Hotel",
+								"address2": "233 Victoria sq"
 		});
 });
 
