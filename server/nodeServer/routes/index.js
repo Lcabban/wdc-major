@@ -64,7 +64,10 @@ router.get('/login.html',function(req,res,next) {
 });
 
 router.get('/search.html',function(req,res,next) {
-		res.render('search', {"username": greetName});
+		res.render('search', {	"username":greetName,
+								"hotel1": "Ibis Adelaide",
+								"address1": "122 Grenfell st"
+		});
 });
 
 	//=====Files=====

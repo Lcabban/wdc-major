@@ -34,14 +34,27 @@ html(lang='en')
                 img(src='hotelimg2.jpg', alt='Hotel image', width='240', height='135')
             .searchTxt
                 .srName
-                    h2 The fake hotel
+                    h2 #{hotel1}
                 .srReview
                     p ★ ★ ★ ★ ☆ 
                 .srAddress
-                    p 12 fake street
+                    p #{address1}
                 .bookDiv
                     form(action='hotel.html')
-                    button(type='submit') Book now!
+                        button(type='submit') Book now!
+        .searchResult
+            .searchImg
+                img(src='hotelimg2.jpg', alt='Hotel image', width='240', height='135')
+            .searchTxt
+                .srName
+                    h2 Name
+                .srReview
+                    p ★ ★ ★ ★ ☆ 
+                .srAddress
+                    p NAME
+                .bookDiv
+                    form(action='hotel.html')
+                        button(type='submit') Book now!
         .searchResult
             .searchImg
                 img(src='hotelimg2.jpg', alt='Hotel image', width='240', height='135')
@@ -54,7 +67,7 @@ html(lang='en')
                     p 12 fake street
                 .bookDiv
                     form(action='hotel.html')
-                    button(type='submit') Book now!
+                        button(type='submit') Book now!
         .searchResult
             .searchImg
                 img(src='hotelimg2.jpg', alt='Hotel image', width='240', height='135')
@@ -67,7 +80,7 @@ html(lang='en')
                     p 12 fake street
                 .bookDiv
                     form(action='hotel.html')
-                    button(type='submit') Book now!
+                        button(type='submit') Book now!
         .searchResult
             .searchImg
                 img(src='hotelimg2.jpg', alt='Hotel image', width='240', height='135')
@@ -80,20 +93,7 @@ html(lang='en')
                     p 12 fake street
                 .bookDiv
                     form(action='hotel.html')
-                    button(type='submit') Book now!
-        .searchResult
-            .searchImg
-                img(src='hotelimg2.jpg', alt='Hotel image', width='240', height='135')
-            .searchTxt
-                .srName
-                    h2 The fake hotel
-                .srReview
-                    p ★ ★ ★ ★ ☆ 
-                .srAddress
-                    p 12 fake street
-                .bookDiv
-                    form(action='hotel.html')
-                    button(type='submit') Book now!
+                        button(type='submit') Book now!
 
     #rightDiv.searchDiv
         #map
